@@ -199,9 +199,13 @@ def update_hot_topic(arxiv_list, topics):
             f.write("---\n\n")
             f.write("## 📚 Paper List\n\n")
             f.write(topic_list)
+            topic_md_path = f"hot_topic/{topic}.md"
+            archive_dir = os.path.join("archive", DATE)
+            os.makedirs(archive_dir, exist_ok=True)
+            shutil.copy2(topic_md_path, os.path.join(archive_dir, f"{topic}.md"))
 
         print("Updated hot_topic for", topic)
-
+        
     hot_topic = sorted(topics.items(), key=lambda x: x[1]["count"], reverse=True)
     hot_topic = "\n".join([f"  - [{topic}](hot_topic/{topic}.md)" for topic, _ in hot_topic])
 
