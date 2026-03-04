@@ -1,66 +1,70 @@
 category:
-  cs.AI: Artificial Intelligence 🧠
-  cs.CL: Computation and Language 💬
   cs.CV: Computer Vision and Pattern Recognition 📸
   cs.LG: Machine Learning 📊
-  cs.MA: Multiagent Systems 🌐
-  cs.RO: Robotics 🤖
+  cs.AI: Artificial Intelligence 🧠
+  # 如果工具支持，可以尝试添加 q-bio.QM (Quantitative Methods) 或 eess.IV (Image and Video Processing)
+  # 但通常 cs.CV 和 cs.LG 已经涵盖了绝大多数 AI+Bio 的论文
 
 topic:
-  LLM:
+  # 1. 核心方向：多模态空间转录组 (Visual-Omics)
+  # 关注点：病理图像(WSI/H&E)与空间转录组(ST)的结合
+  Multimodal_ST_Pathology:
     keywords:
-      - LLM
-      - Large Language Model
-      - GPT
+      - [Spatial Transcriptomics, Histology]
+      - [Spatial Transcriptomics, WSI]
+      - [Spatial Transcriptomics, Image]
+      - [Visium, Pathology]
+      - [Xenium, Pathology]
+      - [Gene Expression, H&E]
+      - Visual-Omics
+      - [Multimodal, Omics]
+      - [Cross-modal, Pathology]
     filters:
-  MLLM:
+      - review # 可选：过滤掉综述，只看算法，看你需求
+
+  # 2. 核心方法：病理/医疗基础模型与预训练
+  # 关注点：自监督(SSL)、预训练(Pre-training)、基础模型(Foundation Model)、对比学习(CLIP)
+  Med_Foundation_Models:
     keywords:
-      - VLM
-      - MLM
-      - MLLM
-      - Multi-Modal Language Model
-      - Multimodal Language Model
-      - Vision Language Model
+      - [Foundation Model, Pathology]
+      - [Pre-training, Histopathology]
+      - [Self-supervised, Pathology]
+      - [Contrastive Learning, WSI]
+      - [Masked Image Modeling, Pathology] # 类似 MAE 的方法
+      - [Generative, Pathology]
+      - PLIP
+      - [CLIP, Medical]
     filters:
-  Test-Time-Scaling:
+      - LLM # 过滤掉纯文本的大语言模型，除非它们结合了病理
+
+  # 3. 关键代理任务：生成、插补与超分
+  # 关注点：从 H&E 预测 ST (STPath/STFlow 这类工作的核心)，以及数据增强
+  ST_Generation_Imputation:
     keywords:
-      - [LLM, Reasoning]
-      - [VLM, Reasoning]
-      - [System 2, Thinking]
-      - Slow Thinking
-      - o1
-      - r1
-      - test-time-scaling
-      - test-time-computing
-      - TTS
-      - TTC
+      - [Gene Expression, Prediction]
+      - [Spatial Transcriptomics, Imputation]
+      - [Spatial Transcriptomics, Super-resolution]
+      - [Virtual Staining]
+      - [Cross-modality, Translation]
+      - [Flow Matching, Medical] # 针对 STFlow 这类新方法
     filters:
-  Embodied_AI:
+
+  # 4. 下游应用：预后与生存分析
+  # 关注点：你的最终目标——预后预测
+  Prognosis_Survival:
     keywords:
-      - VLA
-      - Vision-Language-Action
+      - [Prognosis, Deep Learning]
+      - [Survival Analysis, WSI]
+      - [Survival Prediction, Multimodal]
+      - [Risk Stratification, Pathology]
+      - [Cox, Neural Network]
     filters:
-  Diffusion:
+
+  # 5. 图神经网络在病理中的应用 (ASIGN, MEATRD 常用技术)
+  Graph_Pathology:
     keywords:
-      - Diffusion
-      - DDPM
-      - DDIM
-    filters:
-  3D_Reconstruction:
-    keywords:
-      - Reconstruction
-      - Nerf
-      - Gaussian
-    filters:
-      - 2D
-  3D_Generation:
-    keywords:
-      - Video Generation
-      - Scene Generation
-      - Content Generation
-    filters:
-      - 2D
-  Benchmark:
-    keywords:
-      - Bench
+      - [Graph Neural Network, WSI]
+      - [GNN, Spatial Transcriptomics]
+      - [Cell-Cell Interaction]
+      - [Topology, Pathology]
     filters:
