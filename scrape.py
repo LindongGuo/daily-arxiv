@@ -7,7 +7,7 @@ from datetime import UTC, datetime, timedelta
 import requests
 import yaml
 from bs4 import BeautifulSoup
-
+import shutil
 DATE = (datetime.now(UTC) - timedelta(days=1)).strftime("%Y-%m-%d")
 
 
