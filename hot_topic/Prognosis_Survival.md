@@ -1,17 +1,23 @@
-# 🔍 Multimodal_ST_Pathology Papers · 2026-03-05
+# 🔍 Prognosis_Survival Papers · 2026-03-05
 
-[![Total Papers](https://img.shields.io/badge/Papers-1-2688EB)]()
+[![Total Papers](https://img.shields.io/badge/Papers-2-2688EB)]()
 [![Last Updated](https://img.shields.io/badge/dynamic/json?url=https://api.github.com/repos/tavish9/awesome-daily-AI-arxiv/commits/main&query=%24.commit.author.date&label=updated&color=orange)]()
 
 ---
 
 ## 📌 Filter by Category
-**Keywords**: `Spatial Transcriptomics,Histology` `Spatial Transcriptomics,WSI` `Spatial Transcriptomics,Image` `Visium,Pathology` `Xenium,Pathology` `Gene Expression,H&E` `Visual-Omics` `Multimodal,Omics` `Cross-modal,Pathology`  
-**Filter**: `review`
+**Keywords**: `Prognosis,Deep Learning` `Survival Analysis,WSI` `Survival Prediction,Multimodal` `Risk Stratification,Pathology` `Cox,Neural Network`  
+**Filter**: `None`
 
 ---
 
 ## 📚 Paper List
+
+- **[Comparative Evaluation of Traditional Methods and Deep Learning for Brain Glioma Imaging. Review Paper](https://arxiv.org/abs/2603.04796)**  `arXiv:2603.04796`  `cs.CV` `cs.AI`  
+  _Kiranmayee Janardhan, Vinay Martin DSa Prabhu, T. Christy Bobby_
+  <details open><summary>Abstract</summary>
+  Segmentation is crucial for brain gliomas as it delineates the glioma s extent and location, aiding in precise treatment planning and monitoring, thus improving patient outcomes. Accurate segmentation ensures proper identification of the glioma s size and position, transforming images into applicable data for analysis. Classification of brain gliomas is also essential because different types require different treatment approaches. Accurately classifying brain gliomas by size, location, and aggressiveness is essential for personalized prognosis prediction, follow-up care, and monitoring disease progression, ensuring effective diagnosis, treatment, and management. In glioma research, irregular tissues are often observable, but error free and reproducible segmentation is challenging. Many researchers have surveyed brain glioma segmentation, proposing both fully automatic and semi-automatic techniques. The adoption of these methods by radiologists depends on ease of use and supervision, with semi-automatic techniques preferred due to the need for accurate evaluations. This review evaluates effective segmentation and classification techniques post magnetic resonance imaging acquisition, highlighting that convolutional neural network architectures outperform traditional techniques in these tasks.
+  </details>
 
 - **[CARE: A Molecular-Guided Foundation Model with Adaptive Region Modeling for Whole Slide Image Analysis](https://arxiv.org/abs/2602.21637)**  `arXiv:2602.21637`  `cs.CV`  
   _Di Zhang, Zhangpeng Gong, Xiaobo Pang, Jiashuai Liu, Junbo Lu, Hao Cui, et al._
