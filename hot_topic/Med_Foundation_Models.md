@@ -1,6 +1,6 @@
-# 🔍 Med_Foundation_Models Papers · 2026-04-18
+# 🔍 Med_Foundation_Models Papers · 2026-04-20
 
-[![Total Papers](https://img.shields.io/badge/Papers-1-2688EB)]()
+[![Total Papers](https://img.shields.io/badge/Papers-3-2688EB)]()
 [![Last Updated](https://img.shields.io/badge/dynamic/json?url=https://api.github.com/repos/tavish9/awesome-daily-AI-arxiv/commits/main&query=%24.commit.author.date&label=updated&color=orange)]()
 
 ---
@@ -13,8 +13,20 @@
 
 ## 📚 Paper List
 
-- **[Beyond Independent Frames: Latent Attention Masked Autoencoders for Multi-View Echocardiography](https://arxiv.org/abs/2604.15096)**  `arXiv:2604.15096`  `cs.CV` `cs.LG`  
-  _Simon Böhi, Irene Cannistraci, Sergio Muñoz Gonzalez, Moritz Vandenhirtz, Sonia Laguna, Samuel Ruiperez-Campillo, et al._
+- **[ProtoCLIP: Prototype-Aligned Latent Refinement for Robust Zero-Shot Chest X-Ray Classification](https://arxiv.org/abs/2604.18444)**  `arXiv:2604.18444`  `cs.LG` `cs.AI` `cs.CV`  
+  _Florian Kittler, Sheethal Bhat, Andreas Maier_
   <details open><summary>Abstract</summary>
-  Echocardiography is a widely used modality for cardiac assessment due to its non-invasive and cost-effective nature, but the sparse and heterogeneous spatiotemporal views of the heart pose distinct challenges. Existing masked autoencoder (MAE) approaches typically process images or short clips independently, failing to capture the inherent multi-view structure required for coherent cardiac representation. We introduce Latent Attention Masked Autoencoder (LAMAE), a foundation model architecture tailored to the multi-view nature of medical imaging. LAMAE augments the standard MAE with a latent attention module that enables information exchange across frames and views directly in latent space. This allows the model to aggregate variable-length sequences and distinct views, reconstructing a holistic representation of cardiac function from partial observations. We pretrain LAMAE on MIMIC-IV-ECHO, a large-scale, uncurated dataset reflecting real-world clinical variability. To the best of our knowledge, we present the first results for predicting ICD-10 codes from MIMIC-IV-ECHO videos. Furthermore, we empirically demonstrate that representations learned from adult data transfer effectively to pediatric cohorts despite substantial anatomical differences. These results provide evidence that incorporating structural priors, such as multi-view attention, yields significantly more robust and transferable representations.
+  Zero-shot vision-language models (VLMs) have shown promise for chest radiograph classification, but their performance is often limited by confounding label co-occurrence, long-tail class imbalance, and transfer instability under domain shift. We propose ProtoCLIP, a refinement strategy for CLIP-style VLMs that improves zero-shot discrimination through targeted data curation and distilled anchor alignment. Specifically, we construct pathology-focused training subsets with curated negative samples to reduce co-occurrence bias. We also introduce a representation-preserving distillation objective to stabilize adaptation while maintaining semantic structure and improving discrimination of clinically relevant co-occurring pathologies. Evaluated on an unseen dataset VinDr-CXR, ProtoCLIP improves AUC by 2-10 percentage points over a strong CLIP-based baseline across multiple findings. For pneumothorax specifically, ProtoCLIP achieves a state-of-the-art AUC of 0.94. These results demonstrate that anchor-guided refinement, coupled with curated supervision and controlled adaptation, can mitigate common zero-shot transfer failures in medical VLMs without requiring large-scale retraining.
+  </details>
+
+- **[Mammo-FM: Breast-specific foundational model for Integrated Mammographic Diagnosis, Prognosis, and Reporting](https://arxiv.org/abs/2512.00198)**  `arXiv:2512.00198`  `cs.CV`  
+  _Shantanu Ghosh, Vedant Parthesh Joshi, Rayan Syed, Aya Kassem, Abhishek Varshney, Payel Basak, et al._
+  <details open><summary>Abstract</summary>
+  Breast cancer is one of the leading causes of death among women worldwide. We introduce Mammo-FM, the first foundation model specifically for mammography, pretrained on the largest and most diverse dataset to date - 140,677 patients (821,326 mammograms) across four U.S. institutions. Mammo-FM provides a unified foundation for core clinical tasks in breast imaging, including cancer diagnosis, pathology localization, structured report generation, and cancer risk prognosis within a single framework. Its alignment between images and text enables both visual and textual interpretability, improving transparency and clinical auditability, which are essential for real-world adoption. We rigorously evaluate Mammo-FM across diagnosis, prognosis, and report-generation tasks in in- and out-of-distribution datasets. Despite operating on native-resolution mammograms and using only one-third of the parameters of state-of-the-art generalist FMs, Mammo-FM consistently outperforms them across multiple public and private benchmarks. These results highlight the efficiency and value of domain-specific foundation models designed around the full spectrum of tasks within a clinical domain and emphasize the importance of rigorous, domain-aligned evaluation.
+  </details>
+
+- **[Beyond the Failures: Rethinking Foundation Models in Pathology](https://arxiv.org/abs/2510.23807)**  `arXiv:2510.23807`  `cs.AI` `cs.CV`  
+  _Hamid R. Tizhoosh_
+  <details open><summary>Abstract</summary>
+  Despite their successes in vision and language, foundation models have stumbled in pathology, revealing low accuracy, instability, and heavy computational demands. These shortcomings stem not from tuning problems but from deeper conceptual mismatches: dense embeddings cannot represent the combinatorial richness of tissue, and current architectures inherit flaws in self-supervision, patch design, and noise-fragile pretraining. Biological complexity and limited domain innovation further widen the gap. The evidence is clear-pathology requires models explicitly designed for biological images rather than adaptations of large-scale natural-image methods whose assumptions do not hold for tissue.
   </details>
