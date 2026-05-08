@@ -1,6 +1,6 @@
-# 🔍 Multimodal_ST_Pathology Papers · 2026-05-06
+# 🔍 Multimodal_ST_Pathology Papers · 2026-05-07
 
-[![Total Papers](https://img.shields.io/badge/Papers-2-2688EB)]()
+[![Total Papers](https://img.shields.io/badge/Papers-1-2688EB)]()
 [![Last Updated](https://img.shields.io/badge/dynamic/json?url=https://api.github.com/repos/tavish9/awesome-daily-AI-arxiv/commits/main&query=%24.commit.author.date&label=updated&color=orange)]()
 
 ---
@@ -13,14 +13,8 @@
 
 ## 📚 Paper List
 
-- **[HEXST: Hexagonal Shifted-Window Transformer for Spatial Transcriptomics Gene Expression Prediction](https://arxiv.org/abs/2605.04682)**  `arXiv:2605.04682`  `cs.LG` `cs.CV`  
-  _Keunho Byeon, Jin Tae Kwak_
+- **[Cohort-Based Active Modality Acquisition](https://arxiv.org/abs/2505.16791)**  `arXiv:2505.16791`  `cs.LG` `cs.AI`  
+  _Tillmann Rheude, Roland Eils, Benjamin Wild_
   <details open><summary>Abstract</summary>
-  Spatial transcriptomics offers spatially resolved gene expression profiling within tissue sections, but its cost and limited throughput hinder large-scale deployment. To extend this capability to routine practice, recent computational methods aim to infer spatial gene expression directly from ubiquitous hematoxylin and eosin-stained histology slides. However, most existing models assume Cartesian or geometry-agnostic locality, despite the hexagonal sampling of widely used spot-array platforms, and point-wise regression objectives often yield over-smoothed gene expression profiles, obscuring gene-specific spatial heterogeneity. To address these, we propose HEXST, a geometry-aligned Transformer for spatial gene expression prediction from histology. HEXST operates directly on hexagonal spot coordinates to enable efficient local-to-global contextual modeling via tailored shifted-window attention mechanism and hexagonal rotary positional encoding. To enhance gene-wise spatial contrast, HEXST complements point-wise regression with a contrast-sensitive differential objective and transcriptomic priors from a pretrained single-cell foundation model during training. Across seven spatial transcriptomics datasets, HEXST consistently outperforms state-of-the-art models, providing accurate and robust spatial gene expression predictions while preserving gene-wise contrast and spatial heterogeneity.
-  </details>
-
-- **[MoLF: Mixture-of-Latent-Flow for Pan-Cancer Spatial Gene Expression Prediction from Histology](https://arxiv.org/abs/2602.02282)**  `arXiv:2602.02282`  `cs.LG`  
-  _Susu Hu, Stefanie Speidel_
-  <details open><summary>Abstract</summary>
-  Inferring spatial transcriptomics (ST) from histology enables scalable histogenomic profiling, yet current methods are largely restricted to single-tissue models. This fragmentation fails to leverage biological principles shared across cancer types and hinders application to data-scarce scenarios. While pan-cancer training offers a solution, the resulting heterogeneity challenges monolithic architectures. To bridge this gap, we introduce MoLF (Mixture-of-Latent-Flow), a generative model for pan-cancer histogenomic prediction. MoLF leverages a conditional Flow Matching objective to map noise to the gene latent manifold, parameterized by a Mixture-of-Experts (MoE) velocity field. By dynamically routing inputs to specialized sub-networks, this architecture effectively decouples the optimization of diverse tissue patterns. Our experiments demonstrate that MoLF establishes a new state-of-the-art, consistently outperforming both specialized and foundation model baselines on pan-cancer benchmarks. Furthermore, MoLF exhibits zero-shot generalization to cross-species data, suggesting it captures fundamental, conserved histo-molecular mechanisms.
+  Real-world multimodal machine learning often faces missing, costly-to-acquire modalities, raising the problem of which samples to prioritize for additional acquisition under a budget. Prior work mainly studies per-sample or training-time acquisition while test-time, cohort-level acquisition is less explored. We propose Cohort-based Active Modality Acquisition (CAMA), a novel test-time cohort-level modality acquisition setting, and introduce imputation-based acquisition strategies that estimate the expected utility of acquiring a missing modality, along with upper-bound heuristics for benchmarking. Experiments on datasets with up to 15 modalities demonstrate that our proposed imputation-based strategies can more effectively guide the acquisition of an additional modality for selected samples compared with methods relying solely on pre-acquisition information, entropy-based guidance, or random selection. We showcase the real-world relevance and scalability of our method by demonstrating its ability to guide the acquisition of proteomics data for disease prediction in a large prospective cohort, the UK Biobank (UKB). Our work provides an effective approach for optimizing modality acquisition at the cohort level, enabling more effective use of resources in constrained settings.
   </details>
