@@ -1,4 +1,4 @@
-# 🔍 Multimodal_ST_Pathology Papers · 2026-05-25
+# 🔍 Multimodal_ST_Pathology Papers · 2026-06-01
 
 [![Total Papers](https://img.shields.io/badge/Papers-1-2688EB)]()
 [![Last Updated](https://img.shields.io/badge/dynamic/json?url=https://api.github.com/repos/tavish9/awesome-daily-AI-arxiv/commits/main&query=%24.commit.author.date&label=updated&color=orange)]()
@@ -13,8 +13,8 @@
 
 ## 📚 Paper List
 
-- **[Benchmarking Pathology Foundation Models for Spatial Domain Understanding](https://arxiv.org/abs/2605.25764)**  `arXiv:2605.25764`  `cs.CV` `cs.AI`  
-  _Bokai Zhao, Yiyang Zhang, Yuanchi Zhu, Hanqing Chao, Long Bai, Tai Ma, et al._
+- **[GC-MoE: Genomics-Guided Cell-Type-Specific Mixture of Experts for Histology-Based Single-Cell Spatial Transcriptomics](https://arxiv.org/abs/2606.02424)**  `arXiv:2606.02424`  `cs.CV` `cs.AI` `cs.LG`  
+  _Kaito Shiku, Ahtisham Fazeel Abbasi, Ryoma Bise, Yuichiro Iwashita, Kazuya Nishimura, Andreas Dengel, et al._
   <details open><summary>Abstract</summary>
-  Pathology foundation models (PFMs) have emerged as a core approach for learning transferable representations from whole slide images (WSIs), and they are typically benchmarked through downstream clinical endpoints. While such task level evaluations are indispensable, they offer limited insight into what the representations themselves encode, particularly whether PFM embeddings can distinguish meaningful tissue regions and capture their spatial relationships. We present SpaPath-Bench, a representation level benchmark designed to diagnose spatial representation capability in PFMs. SpaPath-Bench formulates spatial domain identification (SDI) on paired whole slide image and spatial transcriptomics (ST) data as a diagnostic task. It curates 42 public paired WSI and ST slides, enables large scale evaluation across 19 encoders and seven SDI methods, and measures partition quality using three complementary criteria: unsupervised spatial coherence, transcriptomics referenced agreement, and expert referenced agreement. Across 83K runs, SpaPath-Bench reveals that different pretraining paradigms capture distinct aspects of tissue spatial architecture, and it provides practical guidance for building the next generation of spatially aware computational pathology models. Code and data pipelines are publicly available atthis https URL.
+  Histology-based single-cell spatial transcriptomics (ST) estimation aims to predict gene expression for individual cells from histopathological images and cell locations, reducing the need for costly single-cell ST measurements. Unlike existing histology-to-ST methods that mainly predict spot-level profiles for local regions containing multiple cells, this task requires modeling cell-to-cell expression variability, which is strongly structured by cell type. We propose Genomics-Guided Cell-Type-Specific Mixture-of-Experts (GC-MoE), which estimates cell-type probabilities with a routing network and softly combines cell-type-specific experts for gene expression prediction. To further encode cell-type-dependent gene programs, we introduce the Cell-Type-Specific Co-Expression-Aware Predictor (CAP), together with a lightweight Cell-to-Cell Interaction Attention (C2CA) module for neighboring-cell context. Experiments and ablations on public single-cell ST datasets show consistent improvements over existing single-cell and adapted spot-level baselines.
   </details>
