@@ -1,6 +1,6 @@
 # 🚀 Daily AI arXiv Digest
 
-[![Total Papers](https://img.shields.io/badge/paper_today-283+-red)]()
+[![Total Papers](https://img.shields.io/badge/paper_today-71+-red)]()
 [![Last Updated](https://img.shields.io/badge/dynamic/json?url=https://api.github.com/repos/tavish9/awesome-daily-AI-arxiv/commits/main&query=%24.commit.author.date&label=updated&color=orange)](https://github.com/Tavish9/awesome-daily-AI-arxiv/commits/main/)
 [![arXiv API](https://img.shields.io/badge/powered_by-arXiv_API-009688)](https://arxiv.org/help/api)
 [![License](https://img.shields.io/badge/license-CC_BY--SA_4.0-3989c9)](LICENSE)
@@ -12,10 +12,10 @@
 ## 🌟 Today's Highlights
 
 - 🔥 Hot Topic
-  - [Med_Foundation_Models](hot_topic/Med_Foundation_Models.md)
-  - [Multimodal_ST_Pathology](hot_topic/Multimodal_ST_Pathology.md)
-  - [ST_Generation_Imputation](hot_topic/ST_Generation_Imputation.md)
   - [Prognosis_Survival](hot_topic/Prognosis_Survival.md)
+  - [Multimodal_ST_Pathology](hot_topic/Multimodal_ST_Pathology.md)
+  - [Med_Foundation_Models](hot_topic/Med_Foundation_Models.md)
+  - [ST_Generation_Imputation](hot_topic/ST_Generation_Imputation.md)
   - [Graph_Pathology](hot_topic/Graph_Pathology.md)
 - 💫 Active Platform
   - [Huggingface](https://huggingface.co/papers)
@@ -29,9 +29,9 @@
 
 | Category                                                                                | Count |
 | --------------------------------------------------------------------------------------- | ----- |
-| [Computer Vision and Pattern Recognition 📸](#computer-vision-and-pattern-recognition-) | 143   |
+| [Computer Vision and Pattern Recognition 📸](#computer-vision-and-pattern-recognition-) | 0     |
 | [Machine Learning 📊](#machine-learning-) | 71    |
-| [Artificial Intelligence 🧠](#artificial-intelligence-) | 69    |
+| [Artificial Intelligence 🧠](#artificial-intelligence-) | 0     |
 
 ### Artificial Intelligence 🧠
 
@@ -1978,7 +1978,7 @@
 - **[Sesame: Structure-Aware Molecular Generation via Spatial Density-Map Conditioning](https://arxiv.org/abs/2606.23856)**  `arXiv:2606.23856`  
   _Konstantin Yatsenko, Arvind Thiagarajan_
   <details><summary>Abstract</summary>
-  Generative molecular models for drug design are a promising direction with much active research. In the next phase of computational drug design, such models will need to understand small molecule structure and protein-ligand interactions, and they will need to possess the machinery to generate molecules \textit{de novo}. Incorporating each feature poses a critical challenge. Equally important, yet often treated as secondary, is the ability to grow a molecule from a partial starting point -- a scaffold or fragment supplied by a chemist -- which is the central operation of lead optimization. We present Sesame (Spatial Evoformer for a Structure-Aware Molecular Engine), a diffusion-based molecular generation model that leverages a novel spatial pairformer module to condition on partial molecular structure and the surrounding protein pocket, both expressed as continuous spatial density maps. This single conditioning mechanism supports both \textit{de novo} generation and fragment-conditioned lead optimization, letting a medicinal chemist prune a hit to a scaffold and have Sesame grow it in productive ways. In addition to this module, we also introduce a diffusion framework for joint denoising of atom types, bond types, and positions, along with a trajectory finetuning scheme that trains on the model's own sampling rollouts to improve generation quality. Sesame is trained on a large corpus of ligand-only and protein-ligand datasets.
+  Generative molecular models for drug design are a promising direction with much active research. In the next phase of computational drug design, such models will need to understand small molecule structure and protein-ligand interactions, and they will need to possess the machinery to generate molecules de novo. Incorporating each feature poses a critical challenge. Equally important, yet often treated as secondary, is the ability to grow a molecule from a partial starting point -- a scaffold or fragment supplied by a chemist -- which is the central operation of lead optimization. We present Sesame (Spatial Evoformer for a Structure-Aware Molecular Engine), a diffusion-based molecular generation model that leverages a novel spatial pairformer module to condition on partial molecular structure and the surrounding protein pocket, both expressed as continuous spatial density maps. This single conditioning mechanism supports both de novo generation and fragment-conditioned lead optimization, letting a medicinal chemist prune a hit to a scaffold and have Sesame grow it in productive ways. In addition to this module, we also introduce a diffusion framework for joint denoising of atom types, bond types, and positions, along with a trajectory finetuning scheme that trains on the model's own sampling rollouts to improve generation quality. Sesame is trained on a large corpus of ligand-only and protein-ligand datasets.
   </details>
 
 - **[Machine Learning Modeling for Real-Time Melt Pool Monitoring in Laser Powder Bed Fusion Additive Manufacturing: A Hybrid Approach](https://arxiv.org/abs/2606.23851)**  `arXiv:2606.23851`  
@@ -2143,10 +2143,10 @@
   Comparing internal representations is a central goal in neuroscience and machine learning, but standard linear alignment metrics (Representational Similarity Analysis, Centered Kernel Alignment, and linear regression) are frequently applied to neural activity coordinates rather than on the underlying features. We show this matters when neural systems operate in superposition, encoding more features than they have neurons via linear compression. Closed-form derivations prove that these metrics depend on the Gram matrices of each system's projection, not on the latent features themselves: alignment thus combines what a system represents with how it is encoded. For those interested in what features two systems share, this is a problem: Two networks can have identical feature content yet appear more dissimilar than networks exhibiting partial feature overlap. This apparent misalignment need not reflect lost information as compressed sensing guarantees sparse features remain recoverable from the compressed activity. We confirm this by training supervised TopK sparse autoencoders that realize solvable compressed sensing by construction, finding alignment on recovered latents restored even when raw-activation alignment remains deflated. We extend the result to unsupervised SAEs trained without ground-truth latents, and to pretrained vision and language model SAEs, where SAE-latent alignment exceeds raw-activation alignment, consistent with superposition in real systems.
   </details>
 
-- **[Polaris: A Godel Agent Framework for Small Language Models through Experience-Abstracted Policy Repair](https://arxiv.org/abs/2603.23129)**  `arXiv:2603.23129`  
+- **[Polaris: A Gödel Agent Framework for Small Language Models through Experience-Abstracted Policy Repair](https://arxiv.org/abs/2603.23129)**  `arXiv:2603.23129`  
   _Aditya Kakade, Vivek Srivastava, Shirish Karande_
   <details><summary>Abstract</summary>
-  Gödel agent realize recursive self-improvement: an agent inspects its own policy and traces and then modifies that policy in a tested loop. We introduce Polaris, a Gödel agent for compact models that performs policy repair via experience abstraction, turning failures into policy updates through a structured cycle of analysis, strategy formation, abstraction, and minimal code pat ch repair with conservative checks. Unlike response level self correction or parameter tuning, Polaris makes policy level changes with small, auditable patches that persist in the policy and are reused on unseen instances within each benchmark. As part of the loop, the agent engages in meta reasoning: it explains its errors, proposes concrete revisions to its own policy, and then updates the policy. To enable cumulative policy refinement, we introduce experience abstraction, which distills failures into compact, reusable strategies that transfer to unseen instances. On MGSM, DROP, GPQA, and LitBench (covering arithmetic reasoning, compositional inference, graduate-level problem solving, and creative writing evaluation), a 7-billion-parameter model equipped with Polaris achieves consistent gains over the base policy and competitive baselines.
+  Gödel agent realize recursive self-improvement: an agent inspects its own policy and traces and then modifies that policy in a tested loop. We introduce Polaris, Gödel agent for compact models that performs policy repair via experience abstraction, turning failures into policy updates through a structured cycle of analysis, strategy formation, abstraction, and minimal code patch repair with conservative checks. Unlike response level self correction or parameter tuning, Polaris makes policy level changes with small, auditable patches that persist in the policy and are reused on unseen instances within each benchmark. As part of the loop, the agent engages in meta reasoning: it explains its errors, proposes concrete revisions to its own policy, and then updates the policy. To enable cumulative policy refinement, we introduce experience abstraction, which distills failures into compact, reusable strategies that transfer to unseen instances. On MGSM, DROP, GPQA, and LitBench (covering arithmetic reasoning, compositional inference, graduate-level problem solving, and creative writing evaluation), a 7-billion-parameter model equipped with Polaris achieves consistent gains over the base policy and competitive baselines.
   </details>
 
 - **[Not All Invariants Are Equal: Curating Training Data to Accelerate Program Verification with SLMs](https://arxiv.org/abs/2603.15510)**  `arXiv:2603.15510`  
