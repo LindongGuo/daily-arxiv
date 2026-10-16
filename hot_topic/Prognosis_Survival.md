@@ -1,6 +1,6 @@
-# 🔍 Prognosis_Survival Papers · 2026-10-13
+# 🔍 Prognosis_Survival Papers · 2026-10-15
 
-[![Total Papers](https://img.shields.io/badge/Papers-3-2688EB)]()
+[![Total Papers](https://img.shields.io/badge/Papers-1-2688EB)]()
 [![Last Updated](https://img.shields.io/badge/dynamic/json?url=https://api.github.com/repos/tavish9/awesome-daily-AI-arxiv/commits/main&query=%24.commit.author.date&label=updated&color=orange)]()
 
 ---
@@ -12,18 +12,6 @@
 ---
 
 ## 📚 Paper List
-
-- **[Design Choices for Multimodal Transformer Learning with Missing and Longitudinal Healthcare Data](https://arxiv.org/abs/2610.14436)**  `arXiv:2610.14436`  `cs.LG` `cs.CV`  
-  _Rita Cordeiro Mendes, Maria Manuel Pereira, Carlos Santiago, Catarina Barata_
-  <details open><summary>Abstract</summary>
-  Multimodal learning offers the potential to improve predictions by integrating complementary information from heterogeneous data sources. However, multimodal datasets are frequently incomplete, raising important questions about how models should handle missing information. Although recent approaches increasingly rely on Transformer-based architectures for multimodal fusion, incomplete multimodal data introduces challenges such as missing modalities and intra-modal missingness, which motivate key architectural design choices, such as tokenization granularity. In addition, many datasets are longitudinal, with observations collected across multiple time points. The sequential nature of the Transformer architectures provides a natural framework for modeling such data, but introduces additional considerations, such as how temporal information should be represented. In this study, we systematically investigate these design choices using three different cancer datasets. We compare modality-level and feature-level tokenization and evaluate attention masking and imputation as strategies for handling missing information, both naturally occurring in the datasets and synthetically induced. We further investigate approaches for incorporating temporal information in our training process and how to model it. Experiments are conducted with unimodal and multimodal configurations, as well as different levels of missingness for binary survival classification and multiple time encoding strategies for discrete-time survival prediction. Our results show that while multimodal outperforms unimodal results, missing data heavily impacts predictions and thus effective design choices such as tokenization granularity, and intra-missing handling is essential for reliable prediction.
-  </details>
-
-- **[Efficient Learning of Survival Analysis Models Under Outcome-Dependent Truncation and Censoring](https://arxiv.org/abs/2610.12538)**  `arXiv:2610.12538`  `cs.LG`  
-  _Itai Zilberstein, Ioannis Anagnostides, Arman Kilic, Tuomas Sandholm_
-  <details open><summary>Abstract</summary>
-  Modern machine learning models are typically trained on data assumed to be representative of the predictive tasks the model will face in the future, but practical datasets violate this assumption. We focus on outcome-dependent truncation in which an observation appears in the training data depending on its label. Our work connects two largely distinct literatures: efficient learning under truncation and survival analysis. Existing methods for truncated survival analysis do not characterize the optimization landscape and instead rely on iterative procedures such as expectation maximization. We address this gap and prove that Cox regression can be efficiently learned under truncated and right-censored data using first-order optimization when the baseline hazard is known (despite nonconvexity). In contrast, when the baseline hazard is learned jointly, we construct identifiable and correctly specified models whose negative log-likelihood contains strict suboptimal local minima. On experiments with four survival datasets, we show that accounting for truncation reduces the prediction bias induced by naive Cox regression and extends to neural networks. We also show orders of magnitude speedups compared to standard expectation maximization.
-  </details>
 
 - **[Morphology-aware deep learning predicts colorectal cancer survival from whole-slide images](https://arxiv.org/abs/2610.17603)**  `arXiv:2610.17603`  `cs.CV` `cs.AI` `cs.LG`  
   _Hikmat Khan, Metin N. Gurcan, Anil Parwani, Wendy L. Frankel, Wei Chen, Muhammad Khalid Khan Niazi_
