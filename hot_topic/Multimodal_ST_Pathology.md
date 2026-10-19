@@ -1,4 +1,4 @@
-# 🔍 Multimodal_ST_Pathology Papers · 2026-10-17
+# 🔍 Multimodal_ST_Pathology Papers · 2026-10-18
 
 [![Total Papers](https://img.shields.io/badge/Papers-1-2688EB)]()
 [![Last Updated](https://img.shields.io/badge/dynamic/json?url=https://api.github.com/repos/tavish9/awesome-daily-AI-arxiv/commits/main&query=%24.commit.author.date&label=updated&color=orange)]()
@@ -13,8 +13,8 @@
 
 ## 📚 Paper List
 
-- **[When to Align, When to Predict: A Phase Diagram for Multimodal Learning](https://arxiv.org/abs/2606.11190)**  `arXiv:2606.11190`  `cs.LG`  
-  _Ilay Kamai, Hugues Van Assel, Aviv Regev, Hagai B. Perets, Randall Balestriero_
+- **[Leveraging Cell-level Spatial Transcriptomics as Weak Supervision for Nuclei Classification](https://arxiv.org/abs/2604.23481)**  `arXiv:2604.23481`  `cs.CV` `cs.LG`  
+  _Kazuya Nishimura, Ryoma Bise, Haruka Hirose, Yasuhiro Kojima_
   <details open><summary>Abstract</summary>
-  Cross-modal alignment (CA) and cross-modal prediction (CP) are the dominant paradigms for multimodal representation learning, yet there is no systematic understanding of when each succeeds and when each fails, a gap that leaves practitioners, especially in scientific domains with heterogeneous instruments and multiple levels of measurement, unable to diagnose why standard methods underperform the best single modality. We study both objectives under a spiked signal-plus-noise model with structured cross-modal nuisance correlation, the ingredient that breaks the classical recovery guarantees, and derive separation ratios that expose complementary failure modes: alignment whitens each modality and fails when nuisance is strongly correlated across views; prediction encodes whatever is cross-predictable through a one-sided whitening, with recovery governed by source-modality quality. The resulting phase diagram partitions multimodal problems into four regimes --- Both, CA only, CP only, and Neither --- refined by a recovery count that separates partial recovery from complete failure. We present a data-driven procedure to locate real-world datasets in this diagram using a small labeled subsample, identifying the preferred objective and prediction direction before any cross-modal training, and identifying when no objective in the CA/CP family can improve on the stronger modality alone. Experiments on synthetic data, stereo-vision benchmarks, image--caption pairs, and two real scientific domains, astronomy and single-cell multi-omics, validate the predictions in the nonlinear regime, including both faces of the Neither regime. Code to reproduce the results is available atthis https URL.
+  Deep learning-based nuclei analysis in histopathology relies heavily on large-scale, expert-curated datasets that are costly and difficult to scale across organs. To address this, we propose a scalable framework leveraging cell-level spatial transcriptomics (ST) as an alternative supervision source for nuclei classification. Cell-level ST provides both gene expression profiles and nucleus masks, enabling automatic generation of image-label pairs without manual annotation. We convert gene expression into cell-type labels and introduce an image-oriented classification strategy to effectively transfer these identities to histopathology images. Evaluated on unseen tissues, our framework achieves comparable segmentation and classification performance compared with conventional supervised approaches, despite using fewer manually annotated datasets.
   </details>
